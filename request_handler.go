@@ -723,7 +723,7 @@ func main() {
 
 	router.HandleFunc("/accounts/{id:[^@]+}", accountHandler).
 		Methods("GET")
-	router.HandleFunc("/edit", editHandler)
+	router.HandleFunc("/edit/", editHandler)
 	router.HandleFunc("/save/", saveEditedInfo)
 	router.HandleFunc("/register/", registerHandler).
 		Methods("GET")
